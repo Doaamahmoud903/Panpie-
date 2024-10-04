@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Panpie</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo-dark.png">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="nav-sidebar min-vh-100 position-fixed d-flex top-0">
+		<div class="sidebar-tab d-flex flex-column  justify-content-between min-vh-100 p-4">
+			<div class="tab-links">
+				<ul class="list-unstyled mt-5 sidebar-links overflow-hidden">
+					<a class="text-white" href="index.html"><img src="images/logo-dark.png" class="d-bolck py-3 links-item position-relative" alt="logo" width="250"></a>
+					<li class="cursor-pointer py-2 position-relative links-item" id="search-tab">Search</li>
+					<li class="cursor-pointer py-2 position-relative links-item" id="cat-tab">Categories</li>
+					<li class="cursor-pointer py-2 position-relative links-item" id="area-tab">Area</li>
+					<li class="cursor-pointer py-2 position-relative links-item" id="ing-tab">Ingrediants</li>
+					<li class="cursor-pointer py-2 position-relative links-item" id="contact-tab">Contact us</li>
+				</ul>
+			</div>
+			<div class="tab-footer">
+				<div class="footer-content">
+					<p>Copyright © 2023 Doaa Mahmoud. <br/>All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+
+	    <div class="sidebar-header d-flex align-items-center p-4 bg-white text-dark">
+			<i class="fas fa-times d-block fa-2x open-close-icon"></i>
+		</div>
+	</div>
+    
+
+	<div class="position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" id="loading-container">
+		<i class="fas fa-spinner fa-spin fa-5x"></i>
+	</div>
+
+
+	<div class="container search-page w-75 text-white" id="search-container"></div>
+
+	<div class="min-vh-100 position-relative">
+		<div class="top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" id="inner-loading">
+			<i class="fas fa-spinner fa-spin fa-5x"></i>
+		</div>
+
+	
+	   <div class="container">
+		   <div class="row d-flex justify-content-center pt-5 mx-auto " id="main-container"></div>
+	   </div> 
+    </div>
+	
+	<div class="container pt-5">
+		<div class="row py-5 d-flex justify-content-center primaryFont" id="meal-details"></div>
+	</div>
+	
+	<div class="contact mx-auto d-flex text-center justify-content-center align-items-center"></div> 
+
+
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>

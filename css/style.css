@@ -1,0 +1,102 @@
+:root{
+    --mainfont:"Onest", sans-serif;
+    --primaryfont:"Londrina Solid", sans-serif;
+    --secondaryColor:#03346E;
+
+}
+.mainFont{
+    font-family: var(--mainfont);
+}
+.primaryFont{
+    font-family: var(--primaryfont);
+}
+.tabColor{
+    background-color: var(--secondaryColor);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #252525;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: var(--mainfont);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.cursor-pointer{
+  cursor: pointer !important;
+}
+/* --------------------------------- /Start Sidebar ------------------------------------------- */
+.nav-sidebar i{
+    cursor: pointer;
+    /* color: #E48413; */
+
+}
+.nav-sidebar{
+    background-color: #505050 !important;
+    z-index: 999;
+
+}
+.tab-links{
+    font-family: var(--primaryfont);
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.footer-content p{
+ color: #fcfcfc;
+}
+
+/* --------------------------------- /End Sidebar ------------------------------------------- */
+/* ---------------------------------Start meal Container ------------------------------------- */
+
+.meal-overlay{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: #b0abab;
+    opacity: .9;
+    transition: all 0.5s;
+}
+.meal-overlay p{
+    font-size: 30px;
+    font-family: "Londrina Solid", sans-serif;
+
+}
+.meal:hover .meal-overlay{
+    top: 0;
+}
+
+/* ---------------------------------Start meal Container ------------------------------------- */
+
+/* ---------------------------------Start Search Page---------------------- */
+input.transparent-input{
+    background-color:transparent !important;
+    border:none !important;
+    border-bottom: 1px solid gray !important;
+    color: white !important;
+    font-size: 18px !important ;
+ }
+ .transparent-input::placeholder{
+    color: #e9e6e6;
+    opacity: .7; 
+    font-size: 20px;
+  }
+/* ---------------------------------End Search Page---------------------- */
+#loading-container{
+    z-index: 9999;
+    display: flex;
+    background-color: #1a1818;
+}
+#inner-loading{
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    background-color: #1a1818;
+}
